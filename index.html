@@ -405,42 +405,61 @@
     }
 
     /* ── Mobile: card view for results ───────────────── */
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
+      header { padding: 10px 14px; }
+      .stat-row { grid-template-columns: 1fr 1fr; }
+
+      /* Kill table horizontal scroll */
+      .table-wrap { overflow-x: visible; }
+
       table.results, table.results thead, table.results tbody,
       table.results th, table.results td, table.results tr {
         display: block;
       }
 
+      table.results { min-width: unset; }
+
+      /* Hide column headers — labels come from data-label */
       table.results thead tr {
         position: absolute;
         top: -9999px;
         left: -9999px;
       }
 
-      table.results tr {
+      /* Each row becomes a card */
+      table.results tbody tr {
         border: 1px solid var(--border);
         border-radius: 8px;
         margin: 10px 0;
+        overflow: hidden;
         background: var(--surface2);
-        min-width: unset;
       }
 
+      table.results tbody tr:hover td { background: transparent; }
+
+      /* Ticker — card header */
+      table.results td:first-child {
+        background: #1a1a2e;
+        padding: 12px 16px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-align: left !important;
+        border-top: none;
+        border-bottom: 1px solid var(--border);
+      }
+
+      table.results td:first-child::before { display: none; }
+
+      /* Data fields — label left, value right */
       table.results td {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 9px 14px;
+        padding: 9px 16px;
         border-top: 1px solid var(--border);
         text-align: right !important;
         white-space: normal;
-      }
-
-      table.results td:first-child {
-        font-size: 1.1rem;
-        background: #1a1a2e;
-        border-radius: 8px 8px 0 0;
-        justify-content: flex-start;
-        border-top: none;
       }
 
       table.results td::before {
@@ -454,11 +473,6 @@
         margin-right: 12px;
         text-align: left;
       }
-
-      table.results td:first-child::before { display: none; }
-
-      .stat-row { grid-template-columns: 1fr 1fr; }
-      header { padding: 10px 14px; }
     }
   </style>
 </head>
