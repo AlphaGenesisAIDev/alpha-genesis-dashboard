@@ -1,8 +1,22 @@
 {
-  "updated": "Waiting for first scan...",
-  "scan_label": "—",
-  "total_scanned": 0,
+  "updated": "2026-04-28 08:00:26 ET",
+  "scan_label": "Dashboard Connection Test",
+  "total_scanned": 1,
   "min_score": 50,
-  "results": [],
+  "results": [
+    {
+      "ticker": "GME",
+      "score": 55,
+      "rating": "MEDIUM",
+      "bias": "LONG",
+      "price": 25.41,
+      "vol_ratio": 0.88,
+      "short_pct": 15.1,
+      "bb_width": 17.3,
+      "momentum_5d": 3.9,
+      "stop_loss": 24.43,
+      "stop_pct": 3.9
+    }
+  ],
   "backtest": null
 }
