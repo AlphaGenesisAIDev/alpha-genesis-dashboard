@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpha Genesis Scanner — Live Dashboard</title>
+  <style>
+    /* ── Reset & base ─────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #0d0d12;
+      --surface:     #16161f;
+      --surface2:    #1e1e2a;
+      --border:      #2a2a3c;
+      --text:        #e2e2f0;
+      --muted:       #7070a0;
+      --high:        #ef4444;
+      --medium:      #f97316;
+      --watch:       #22c55e;
+      --long:        #3b82f6;
+      --short:       #ef4444;
+      --win:         #22c55e;
+      --loss:        #ef4444;
+      --amber:       #f97316;
+      --accent:      #6366f1;
+    }
+
+    html { font-size: 15px; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    /* ── Header ───────────────────────────────────────── */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      min-height: 60px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.4; }
+    }
+
+    .brand h1 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      color: #fff;
+    }
+
+    .brand span {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      flex-wrap: wrap;
+    }
+
+    .header-meta strong { color: var(--text); }
+
+    /* ── Status bar ───────────────────────────────────── */
+    #status-bar {
+      background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 0.78rem;
+    }
+
+    #live-indicator {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--watch);
+      animation: livePulse 1.5s infinite;
+    }
+
+    .live-dot.stale { background: var(--amber); animation: none; }
+    .live-dot.error { background: var(--loss);  animation: none; }
+
+    @keyframes livePulse {
+      0%, 100% { opacity: 1;   transform: scale(1); }
+      50%       { opacity: 0.5; transform: scale(0.85); }
+    }
+
+    #fetch-status { color: var(--muted); }
+    #fetch-status.ok     { color: var(--watch); }
+    #fetch-status.stale  { color: var(--amber); }
+    #fetch-status.error  { color: var(--loss);  }
+
+    #refresh-countdown { color: var(--muted); }
+
+    /* ── Main content ─────────────────────────────────── */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 16px 40px;
+    }
+
+    /* ── Stat cards row ───────────────────────────────── */
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+
+    .stat-card .label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 4px;
+    }
+
+    .stat-card .value {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .stat-card .sub {
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    /* ── Backtest panel ───────────────────────────────── */
+    #backtest-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .bt-header {
+      background: #1a1a2e;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .bt-header h2 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .bt-header .bt-meta { font-size: 0.75rem; color: var(--muted); }
+
+    .bt-summary {
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .bt-winrate {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    .bt-winrate.green { color: var(--win); }
+    .bt-winrate.amber { color: var(--amber); }
+    .bt-winrate.red   { color: var(--loss); }
+
+    .bt-wl { font-size: 0.85rem; color: var(--muted); }
+    .bt-wl strong { color: var(--text); }
+
+    .bt-picks {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .bt-picks table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+    }
+
+    .bt-picks th {
+      padding: 8px 10px;
+      text-align: center;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      background: var(--surface2);
+      white-space: nowrap;
+    }
+
+    .bt-picks th:first-child { text-align: left; }
+
+    .bt-picks td {
+      padding: 7px 10px;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    .bt-picks td:first-child { text-align: left; font-weight: 600; }
+
+    .bt-picks tr:hover td { background: var(--surface2); }
+
+    /* ── Main results table ───────────────────────────── */
+    .table-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .table-card-header {
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .table-card-header h2 {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .table-card-header .badge-legend {
+      display: flex;
+      gap: 10px;
+      font-size: 0.72rem;
+      flex-wrap: wrap;
+    }
+
+    .legend-item { display: flex; align-items: center; gap: 4px; color: var(--muted); }
+
+    .legend-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+    }
+
+    .table-wrap { overflow-x: auto; }
+
+    table.results {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      min-width: 620px;
+    }
+
+    table.results thead tr {
+      background: var(--surface2);
+    }
+
+    table.results th {
+      padding: 10px 12px;
+      text-align: center;
+      font-size: 0.68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    table.results th:first-child { text-align: left; }
+
+    table.results td {
+      padding: 11px 12px;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    table.results td:first-child {
+      text-align: left;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.03em;
+    }
+
+    table.results tr:hover td { background: var(--surface2); }
+
+    /* Score badge */
+    .score-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.82rem;
+      color: #fff;
+    }
+
+    .score-badge.high   { background: var(--high); }
+    .score-badge.medium { background: var(--medium); }
+    .score-badge.watch  { background: #166534; color: #86efac; }
+
+    /* Rating */
+    .rating { font-weight: 700; font-size: 0.8rem; }
+    .rating.high   { color: var(--high); }
+    .rating.medium { color: var(--medium); }
+    .rating.watch  { color: var(--watch); }
+
+    /* Bias */
+    .bias { font-weight: 700; font-size: 0.82rem; }
+    .bias.long  { color: var(--long); }
+    .bias.short { color: var(--short); }
+
+    /* Momentum coloring */
+    .positive { color: var(--win); }
+    .negative { color: var(--loss); }
+    .neutral  { color: var(--muted); }
+
+    /* Win / Loss */
+    .result-win  { color: var(--win);  font-weight: 700; }
+    .result-loss { color: var(--loss); font-weight: 700; }
+
+    /* Empty / loading states */
+    .empty-row td {
+      padding: 48px 20px;
+      text-align: center !important;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Footer ───────────────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 20px 16px;
+      font-size: 0.72rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 32px;
+    }
+
+    /* ── Mobile: card view for results ───────────────── */
+    @media (max-width: 640px) {
+      table.results, table.results thead, table.results tbody,
+      table.results th, table.results td, table.results tr {
+        display: block;
+      }
+
+      table.results thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      table.results tr {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        margin: 10px 0;
+        background: var(--surface2);
+        min-width: unset;
+      }
+
+      table.results td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9px 14px;
+        border-top: 1px solid var(--border);
+        text-align: right !important;
+        white-space: normal;
+      }
+
+      table.results td:first-child {
+        font-size: 1.1rem;
+        background: #1a1a2e;
+        border-radius: 8px 8px 0 0;
+        justify-content: flex-start;
+        border-top: none;
+      }
+
+      table.results td::before {
+        content: attr(data-label);
+        font-size: 0.72rem;
+        font-weight: 500;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        flex-shrink: 0;
+        margin-right: 12px;
+        text-align: left;
+      }
+
+      table.results td:first-child::before { display: none; }
+
+      .stat-row { grid-template-columns: 1fr 1fr; }
+      header { padding: 10px 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────── -->
+<header>
+  <div class="brand">
+    <div class="brand-dot"></div>
+    <div>
+      <h1>Alpha Genesis Scanner</h1>
+      <span id="scan-label">Loading...</span>
+    </div>
+  </div>
+  <div class="header-meta">
+    <div><strong id="tickers-scanned">—</strong> tickers scanned</div>
+    <div>Min score: <strong id="min-score">—</strong></div>
+    <div>Updated: <strong id="last-updated">—</strong></div>
+  </div>
+</header>
+
+<!-- ── Status bar ──────────────────────────────────────── -->
+<div id="status-bar">
+  <div id="live-indicator">
+    <div class="live-dot" id="live-dot"></div>
+    <span id="fetch-status">Connecting...</span>
+  </div>
+  <div id="refresh-countdown">Refreshing in <span id="counter">60</span>s</div>
+</div>
+
+<!-- ── Main content ────────────────────────────────────── -->
+<main>
+
+  <!-- Stat cards -->
+  <div class="stat-row">
+    <div class="stat-card">
+      <div class="label">Setups Found</div>
+      <div class="value" id="stat-setups">—</div>
+      <div class="sub">above min score</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">High Conviction</div>
+      <div class="value" id="stat-high" style="color:var(--high)">—</div>
+      <div class="sub">score ≥ 75</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Long Bias</div>
+      <div class="value" id="stat-long" style="color:var(--long)">—</div>
+      <div class="sub">of top setups</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Backtest Win Rate</div>
+      <div class="value" id="stat-winrate">—</div>
+      <div class="sub">last ~5 trading days</div>
+    </div>
+  </div>
+
+  <!-- Backtest panel -->
+  <div id="backtest-panel" style="display:none">
+    <div class="bt-header">
+      <h2>Backtest — Last ~5 Trading Days</h2>
+      <span class="bt-meta" id="bt-meta"></span>
+    </div>
+    <div class="bt-summary">
+      <div class="bt-winrate" id="bt-winrate-display">—</div>
+      <div class="bt-wl" id="bt-wl">—</div>
+    </div>
+    <div class="bt-picks">
+      <table>
+        <thead>
+          <tr>
+            <th>Ticker</th>
+            <th>Bias</th>
+            <th>Entry</th>
+            <th>Current</th>
+            <th>Change</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody id="bt-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Results table -->
+  <div class="table-card">
+    <div class="table-card-header">
+      <h2>Breakout Setups</h2>
+      <div class="badge-legend">
+        <div class="legend-item"><div class="legend-dot" style="background:var(--high)"></div>HIGH ≥75</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--medium)"></div>MED ≥55</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--watch)"></div>WATCH ≥50</div>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="results">
+        <thead>
+          <tr>
+            <th>Ticker</th>
+            <th>Score</th>
+            <th>Rating</th>
+            <th>Bias</th>
+            <th>Price</th>
+            <th>Stop ($)</th>
+            <th>Risk %</th>
+            <th>Vol Ratio</th>
+            <th>Short %</th>
+            <th>BB Width</th>
+            <th>5D Momo</th>
+          </tr>
+        </thead>
+        <tbody id="results-body">
+          <tr class="empty-row">
+            <td colspan="9"><span class="spinner"></span>Loading scan data...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</main>
+
+<!-- ── Footer ──────────────────────────────────────────── -->
+<footer>
+  Alpha Genesis Scanner &mdash; For informational and educational purposes only.
+  Not financial advice. Always do your own research before making any trading decisions.
+  Past signal performance does not guarantee future results.
+</footer>
+
+<script>
+  const DATA_URL      = './data/latest.json';
+  const REFRESH_SEC   = 60;
+
+  let countdown    = REFRESH_SEC;
+  let countdownId  = null;
+  let lastFetchOk  = false;
+
+  // ── Fetch & render ──────────────────────────────────────
+  async function fetchData() {
+    const url = `${DATA_URL}?t=${Date.now()}`;   // cache-bust
+    try {
+      const res  = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      render(data);
+      setStatus('ok', 'Live');
+      lastFetchOk = true;
+    } catch (err) {
+      setStatus('error', `Fetch failed — ${err.message}`);
+      lastFetchOk = false;
+    }
+    resetCountdown();
+  }
+
+  // ── Render all sections ─────────────────────────────────
+  function render(data) {
+    const results = data.results || [];
+
+    // Header meta
+    setText('scan-label',       data.scan_label    || '—');
+    setText('last-updated',     data.updated       || '—');
+    setText('tickers-scanned',  data.total_scanned || '—');
+    setText('min-score',        data.min_score     || '—');
+
+    // Stat cards
+    const highCount = results.filter(r => r.score >= 75).length;
+    const longCount = results.filter(r => r.bias  === 'LONG').length;
+    setText('stat-setups', results.length);
+    setText('stat-high',   highCount);
+    setText('stat-long',   results.length ? `${longCount}/${results.length}` : '—');
+
+    // Backtest
+    renderBacktest(data.backtest);
+
+    // Main table
+    renderTable(results);
+  }
+
+  function renderTable(results) {
+    const tbody = document.getElementById('results-body');
+    if (!results.length) {
+      tbody.innerHTML = `<tr class="empty-row"><td colspan="9">No setups above minimum score in this scan.</td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = results.map(r => {
+      const scoreClass  = r.score >= 75 ? 'high' : (r.score >= 55 ? 'medium' : 'watch');
+      const biasClass   = r.bias === 'LONG' ? 'long' : 'short';
+      const momoClass   = r.momentum_5d > 0 ? 'positive' : (r.momentum_5d < 0 ? 'negative' : 'neutral');
+      const momoSign    = r.momentum_5d > 0 ? '+' : '';
+
+      return `
+        <tr>
+          <td data-label="Ticker">${escHtml(r.ticker)}</td>
+          <td data-label="Score">
+            <span class="score-badge ${scoreClass}">${r.score}/100</span>
+          </td>
+          <td data-label="Rating">
+            <span class="rating ${scoreClass}">${escHtml(r.rating)}</span>
+          </td>
+          <td data-label="Bias">
+            <span class="bias ${biasClass}">${escHtml(r.bias)}</span>
+          </td>
+          <td data-label="Price">$${fmt(r.price)}</td>
+          <td data-label="Stop ($)" style="color:var(--loss);font-weight:700;">$${fmt(r.stop_loss)}</td>
+          <td data-label="Risk %" style="color:var(--amber);">${fmt(r.stop_pct)}%</td>
+          <td data-label="Vol Ratio">${fmt(r.vol_ratio)}x</td>
+          <td data-label="Short %">${fmt(r.short_pct)}%</td>
+          <td data-label="BB Width">${fmt(r.bb_width)}%</td>
+          <td data-label="5D Momo" class="${momoClass}">${momoSign}${fmt(r.momentum_5d)}%</td>
+        </tr>`;
+    }).join('');
+  }
+
+  function renderBacktest(bt) {
+    const panel = document.getElementById('backtest-panel');
+    if (!bt || !bt.total) {
+      panel.style.display = 'none';
+      setText('stat-winrate', '—');
+      return;
+    }
+
+    panel.style.display = 'block';
+
+    const wr        = bt.win_rate;
+    const wrClass   = wr >= 60 ? 'green' : (wr >= 40 ? 'amber' : 'red');
+    const wrColor   = wr >= 60 ? 'var(--win)' : (wr >= 40 ? 'var(--amber)' : 'var(--loss)');
+
+    setText('stat-winrate',         `${wr}%`);
+    document.getElementById('stat-winrate').style.color = wrColor;
+
+    const display = document.getElementById('bt-winrate-display');
+    display.textContent  = `${wr}%`;
+    display.className    = `bt-winrate ${wrClass}`;
+
+    setText('bt-wl',   `${bt.wins}W / ${bt.losses}L of ${bt.total} picks`);
+    setText('bt-meta', `${bt.total} picks evaluated · Win threshold ±2%`);
+
+    const picks = bt.picks || [];
+    document.getElementById('bt-body').innerHTML = picks.map(o => {
+      const chgClass = o.pct_change >= 0 ? 'positive' : 'negative';
+      const chgSign  = o.pct_change > 0 ? '+' : '';
+      const resClass = o.win ? 'result-win' : 'result-loss';
+      const resLabel = o.win ? 'WIN' : 'LOSS';
+      return `
+        <tr>
+          <td>${escHtml(o.ticker)}</td>
+          <td><span class="bias ${o.bias === 'LONG' ? 'long' : 'short'}">${escHtml(o.bias)}</span></td>
+          <td>$${fmt(o.entry_price)}</td>
+          <td>$${fmt(o.current_price)}</td>
+          <td class="${chgClass}">${chgSign}${fmt(o.pct_change)}%</td>
+          <td class="${resClass}">${resLabel}</td>
+        </tr>`;
+    }).join('');
+  }
+
+  // ── Status indicator ────────────────────────────────────
+  function setStatus(state, msg) {
+    const dot    = document.getElementById('live-dot');
+    const status = document.getElementById('fetch-status');
+    dot.className    = `live-dot ${state === 'ok' ? '' : state}`;
+    status.className = `${state === 'ok' ? 'ok' : (state === 'stale' ? 'stale' : 'error')}`;
+    status.textContent = msg;
+  }
+
+  // ── Countdown timer ─────────────────────────────────────
+  function resetCountdown() {
+    countdown = REFRESH_SEC;
+    setText('counter', countdown);
+  }
+
+  function tickCountdown() {
+    countdown--;
+    if (countdown <= 0) {
+      countdown = REFRESH_SEC;
+      fetchData();
+    }
+    setText('counter', countdown);
+  }
+
+  // ── Helpers ─────────────────────────────────────────────
+  function setText(id, val) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = val;
+  }
+
+  function fmt(v) {
+    if (v === null || v === undefined) return '—';
+    const n = parseFloat(v);
+    return isNaN(n) ? '—' : n.toFixed(2);
+  }
+
+  function escHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // ── Boot ────────────────────────────────────────────────
+  fetchData();
+  setInterval(tickCountdown, 1000);
+</script>
+</body>
+</html>
