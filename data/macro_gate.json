@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-19 06:29:43 ET",
+  "updated": "2026-05-19 06:30:08 ET",
   "composite_score": 73.7,
   "zone": "FULL DEPLOY",
   "sizing_pct": 100,
@@ -506,7 +506,7 @@
     },
     {
       "date": "2024-10-21",
-      "close": 573.36
+      "close": 573.35
     },
     {
       "date": "2024-10-22",
@@ -2081,5 +2081,11 @@
       "close": 738.65
     }
   ],
-  "history": []
+  "history": [
+    {
+      "date": "2026-05-19",
+      "composite_score": 73.7,
+      "zone": "FULL DEPLOY"
+    }
+  ]
 }
