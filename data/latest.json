@@ -1,289 +1,2540 @@
 {
-  "updated": "2026-05-14 08:39:18 ET",
-  "scan_label": "Morning Pre-Market 8:35 AM ET",
-  "total_scanned": 248,
-  "min_score": 50,
+  "updated": "2026-05-19 16:20:35 ET",
+  "scan_label": "Startup Test",
+  "total_scanned": 239,
+  "min_score": 55,
+  "macro": {
+    "zone": "FULL DEPLOY",
+    "composite_score": 73.7
+  },
   "results": [
     {
       "ticker": "NVRI",
-      "score": 79,
+      "score": 85,
       "rating": "MEDIUM",
-      "bias": "LONG",
-      "price": 19.48,
-      "vol_ratio": 1.22,
+      "bias": "SHORT",
+      "price": 19.18,
+      "vol_ratio": 0.75,
       "short_pct": 15.5,
-      "bb_width": 3.9,
-      "momentum_5d": 1.4,
-      "stop_loss": 18.69,
-      "stop_pct": 4.1,
-      "ma_bonus": 5
-    },
-    {
-      "ticker": "NTST",
-      "score": 78,
-      "rating": "MEDIUM",
-      "bias": "LONG",
-      "price": 20.46,
-      "vol_ratio": 0.62,
-      "short_pct": 34.7,
       "bb_width": 4.4,
-      "momentum_5d": 0.5,
-      "stop_loss": 20.17,
-      "stop_pct": 1.4,
-      "ma_bonus": 5
+      "momentum_5d": -1.5,
+      "stop_loss": 19.86,
+      "stop_pct": 3.5,
+      "ma_bonus": 5,
+      "rs_vs_spy": -4.5,
+      "rs_score": 0,
+      "high_52w_pct": 95.9,
+      "high_52w_score": 10
     },
     {
-      "ticker": "ENVX",
-      "score": 76,
+      "ticker": "VUZI",
+      "score": 85,
       "rating": "MEDIUM",
       "bias": "LONG",
-      "price": 7.29,
-      "vol_ratio": 2.14,
-      "short_pct": 27.2,
-      "bb_width": 14.9,
-      "momentum_5d": 13.6,
-      "stop_loss": 6.6,
-      "stop_pct": 9.4,
-      "ma_bonus": 5
-    },
-    {
-      "ticker": "AQST",
-      "score": 73,
-      "rating": "MEDIUM",
-      "bias": "SHORT",
-      "price": 4.13,
-      "vol_ratio": 1.83,
-      "short_pct": 13.1,
-      "bb_width": 9.0,
-      "momentum_5d": -2.4,
-      "stop_loss": 4.34,
-      "stop_pct": 5.2,
-      "ma_bonus": 5
-    },
-    {
-      "ticker": "GO",
-      "score": 71,
-      "rating": "MEDIUM",
-      "bias": "SHORT",
-      "price": 7.74,
-      "vol_ratio": 1.88,
-      "short_pct": 39.5,
-      "bb_width": 12.3,
-      "momentum_5d": -3.7,
-      "stop_loss": 8.32,
-      "stop_pct": 7.5,
-      "ma_bonus": 5
-    },
-    {
-      "ticker": "TDAY",
-      "score": 71,
-      "rating": "MEDIUM",
-      "bias": "LONG",
-      "price": 7.5,
-      "vol_ratio": 0.8,
-      "short_pct": 12.4,
-      "bb_width": 8.7,
-      "momentum_5d": 2.0,
-      "stop_loss": 7.13,
-      "stop_pct": 4.9,
-      "ma_bonus": 10
-    },
-    {
-      "ticker": "KURA",
-      "score": 70,
-      "rating": "MEDIUM",
-      "bias": "LONG",
-      "price": 9.48,
-      "vol_ratio": 1.84,
-      "short_pct": 17.8,
-      "bb_width": 13.9,
-      "momentum_5d": 1.7,
-      "stop_loss": 8.82,
-      "stop_pct": 6.9,
-      "ma_bonus": 5
-    },
-    {
-      "ticker": "VELO",
-      "score": 70,
-      "rating": "MEDIUM",
-      "bias": "LONG",
-      "price": 21.01,
-      "vol_ratio": 4.67,
-      "short_pct": 25.6,
-      "bb_width": 64.0,
-      "momentum_5d": 71.8,
-      "stop_loss": 17.86,
-      "stop_pct": 15.0,
-      "ma_bonus": 10
-    },
-    {
-      "ticker": "NRIX",
-      "score": 69,
-      "rating": "MEDIUM",
-      "bias": "SHORT",
-      "price": 16.18,
-      "vol_ratio": 1.18,
-      "short_pct": 18.8,
-      "bb_width": 8.4,
-      "momentum_5d": -0.6,
-      "stop_loss": 16.93,
-      "stop_pct": 4.6,
-      "ma_bonus": 5
-    },
-    {
-      "ticker": "SGRY",
-      "score": 67,
-      "rating": "MEDIUM",
-      "bias": "LONG",
-      "price": 14.31,
-      "vol_ratio": 1.47,
-      "short_pct": 24.0,
-      "bb_width": 9.1,
-      "momentum_5d": 0.0,
-      "stop_loss": 13.39,
-      "stop_pct": 6.4,
-      "ma_bonus": 5
-    },
-    {
-      "ticker": "ABEO",
-      "score": 66,
-      "rating": "MEDIUM",
-      "bias": "SHORT",
-      "price": 5.71,
-      "vol_ratio": 2.39,
-      "short_pct": 31.1,
-      "bb_width": 16.1,
-      "momentum_5d": -1.0,
-      "stop_loss": 6.02,
-      "stop_pct": 5.4,
-      "ma_bonus": 0
-    },
-    {
-      "ticker": "KULR",
-      "score": 65,
-      "rating": "MEDIUM",
-      "bias": "LONG",
-      "price": 4.05,
-      "vol_ratio": 3.89,
-      "short_pct": 21.9,
-      "bb_width": 57.5,
-      "momentum_5d": 48.4,
-      "stop_loss": 3.62,
-      "stop_pct": 10.7,
-      "ma_bonus": 5
-    },
-    {
-      "ticker": "CCCC",
-      "score": 65,
-      "rating": "MEDIUM",
-      "bias": "LONG",
-      "price": 3.68,
-      "vol_ratio": 5.1,
-      "short_pct": 19.2,
-      "bb_width": 29.1,
-      "momentum_5d": 23.5,
-      "stop_loss": 3.26,
-      "stop_pct": 11.5,
-      "ma_bonus": 5
-    },
-    {
-      "ticker": "SLS",
-      "score": 65,
-      "rating": "MEDIUM",
-      "bias": "LONG",
-      "price": 6.53,
-      "vol_ratio": 5.19,
-      "short_pct": 31.1,
-      "bb_width": 32.5,
-      "momentum_5d": 32.5,
-      "stop_loss": 5.95,
-      "stop_pct": 8.9,
-      "ma_bonus": 5
-    },
-    {
-      "ticker": "AEVA",
-      "score": 64,
-      "rating": "MEDIUM",
-      "bias": "LONG",
-      "price": 20.26,
-      "vol_ratio": 1.97,
-      "short_pct": 19.3,
-      "bb_width": 38.4,
-      "momentum_5d": 48.3,
-      "stop_loss": 17.19,
-      "stop_pct": 15.1,
-      "ma_bonus": 10
-    },
-    {
-      "ticker": "FLO",
-      "score": 64,
-      "rating": "MEDIUM",
-      "bias": "SHORT",
-      "price": 7.73,
-      "vol_ratio": 1.9,
-      "short_pct": 15.6,
-      "bb_width": 14.8,
-      "momentum_5d": -9.8,
-      "stop_loss": 8.25,
-      "stop_pct": 6.8,
-      "ma_bonus": 5
-    },
-    {
-      "ticker": "METC",
-      "score": 64,
-      "rating": "MEDIUM",
-      "bias": "LONG",
-      "price": 15.31,
-      "vol_ratio": 2.24,
-      "short_pct": 45.4,
-      "bb_width": 18.5,
-      "momentum_5d": 3.7,
-      "stop_loss": 13.92,
-      "stop_pct": 9.1,
-      "ma_bonus": 5
+      "price": 4.11,
+      "vol_ratio": 3.57,
+      "short_pct": 20.6,
+      "bb_width": 61.1,
+      "momentum_5d": 36.1,
+      "stop_loss": 3.59,
+      "stop_pct": 12.6,
+      "ma_bonus": 5,
+      "rs_vs_spy": 58.9,
+      "rs_score": 10,
+      "high_52w_pct": 95.8,
+      "high_52w_score": 10
     },
     {
       "ticker": "PEB",
-      "score": 64,
+      "score": 78,
       "rating": "MEDIUM",
       "bias": "SHORT",
-      "price": 14.3,
-      "vol_ratio": 0.69,
+      "price": 14.28,
+      "vol_ratio": 0.65,
       "short_pct": 19.2,
-      "bb_width": 8.0,
-      "momentum_5d": -1.5,
-      "stop_loss": 14.85,
-      "stop_pct": 3.8,
-      "ma_bonus": 0
+      "bb_width": 7.7,
+      "momentum_5d": -0.1,
+      "stop_loss": 14.59,
+      "stop_pct": 2.2,
+      "ma_bonus": 0,
+      "rs_vs_spy": 0.5,
+      "rs_score": 4,
+      "high_52w_pct": 96.2,
+      "high_52w_score": 10
+    },
+    {
+      "ticker": "TE",
+      "score": 75,
+      "rating": "MEDIUM",
+      "bias": "LONG",
+      "price": 6.88,
+      "vol_ratio": 2.98,
+      "short_pct": 21.3,
+      "bb_width": 43.4,
+      "momentum_5d": 22.6,
+      "stop_loss": 5.94,
+      "stop_pct": 13.6,
+      "ma_bonus": 5,
+      "rs_vs_spy": 23.4,
+      "rs_score": 10,
+      "high_52w_pct": 70.3,
+      "high_52w_score": 0
+    },
+    {
+      "ticker": "KALV",
+      "score": 74,
+      "rating": "MEDIUM",
+      "bias": "SHORT",
+      "price": 26.77,
+      "vol_ratio": 1.1,
+      "short_pct": 31.9,
+      "bb_width": 52.8,
+      "momentum_5d": -0.1,
+      "stop_loss": 26.85,
+      "stop_pct": 0.3,
+      "ma_bonus": 0,
+      "rs_vs_spy": 32.7,
+      "rs_score": 10,
+      "high_52w_pct": 99.7,
+      "high_52w_score": 10
+    },
+    {
+      "ticker": "TDAY",
+      "score": 74,
+      "rating": "MEDIUM",
+      "bias": "LONG",
+      "price": 7.51,
+      "vol_ratio": 0.68,
+      "short_pct": 12.4,
+      "bb_width": 9.7,
+      "momentum_5d": 0.1,
+      "stop_loss": 7.15,
+      "stop_pct": 4.8,
+      "ma_bonus": 5,
+      "rs_vs_spy": -3.1,
+      "rs_score": 0,
+      "high_52w_pct": 97.8,
+      "high_52w_score": 10
+    },
+    {
+      "ticker": "SLS",
+      "score": 70,
+      "rating": "MEDIUM",
+      "bias": "LONG",
+      "price": 7.59,
+      "vol_ratio": 1.05,
+      "short_pct": 31.1,
+      "bb_width": 76.2,
+      "momentum_5d": 16.2,
+      "stop_loss": 6.8,
+      "stop_pct": 10.4,
+      "ma_bonus": 5,
+      "rs_vs_spy": 54.6,
+      "rs_score": 10,
+      "high_52w_pct": 97.3,
+      "high_52w_score": 10
+    },
+    {
+      "ticker": "BKKT",
+      "score": 69,
+      "rating": "WATCH",
+      "bias": "LONG",
+      "price": 9.68,
+      "vol_ratio": 4.11,
+      "short_pct": 16.1,
+      "bb_width": 24.2,
+      "momentum_5d": 20.7,
+      "stop_loss": 8.26,
+      "stop_pct": 14.7,
+      "ma_bonus": 5,
+      "rs_vs_spy": 1.8,
+      "rs_score": 4,
+      "high_52w_pct": 19.4,
+      "high_52w_score": 0
+    },
+    {
+      "ticker": "RLJ",
+      "score": 69,
+      "rating": "WATCH",
+      "bias": "LONG",
+      "price": 9.15,
+      "vol_ratio": 0.55,
+      "short_pct": 12.9,
+      "bb_width": 20.4,
+      "momentum_5d": 2.9,
+      "stop_loss": 8.77,
+      "stop_pct": 4.2,
+      "ma_bonus": 5,
+      "rs_vs_spy": 11.6,
+      "rs_score": 10,
+      "high_52w_pct": 98.8,
+      "high_52w_score": 10
+    },
+    {
+      "ticker": "APPS",
+      "score": 67,
+      "rating": "WATCH",
+      "bias": "LONG",
+      "price": 4.17,
+      "vol_ratio": 3.06,
+      "short_pct": 11.5,
+      "bb_width": 29.4,
+      "momentum_5d": 1.2,
+      "stop_loss": 3.85,
+      "stop_pct": 7.7,
+      "ma_bonus": 5,
+      "rs_vs_spy": 8.2,
+      "rs_score": 10,
+      "high_52w_pct": 50.4,
+      "high_52w_score": 0
+    },
+    {
+      "ticker": "GPRE",
+      "score": 66,
+      "rating": "WATCH",
+      "bias": "SHORT",
+      "price": 16.2,
+      "vol_ratio": 0.92,
+      "short_pct": 21.2,
+      "bb_width": 15.8,
+      "momentum_5d": -3.6,
+      "stop_loss": 17.49,
+      "stop_pct": 8.0,
+      "ma_bonus": 10,
+      "rs_vs_spy": -4.5,
+      "rs_score": 0,
+      "high_52w_pct": 85.5,
+      "high_52w_score": 4
+    },
+    {
+      "ticker": "SG",
+      "score": 66,
+      "rating": "WATCH",
+      "bias": "LONG",
+      "price": 8.63,
+      "vol_ratio": 1.13,
+      "short_pct": 24.5,
+      "bb_width": 35.6,
+      "momentum_5d": 31.2,
+      "stop_loss": 7.76,
+      "stop_pct": 10.0,
+      "ma_bonus": 10,
+      "rs_vs_spy": 22.3,
+      "rs_score": 10,
+      "high_52w_pct": 51.7,
+      "high_52w_score": 0
+    },
+    {
+      "ticker": "CBRL",
+      "score": 65,
+      "rating": "WATCH",
+      "bias": "SHORT",
+      "price": 28.85,
+      "vol_ratio": 1.22,
+      "short_pct": 41.3,
+      "bb_width": 12.4,
+      "momentum_5d": -0.3,
+      "stop_loss": 31.02,
+      "stop_pct": 7.5,
+      "ma_bonus": 5,
+      "rs_vs_spy": -9.8,
+      "rs_score": 0,
+      "high_52w_pct": 41.0,
+      "high_52w_score": 0
+    },
+    {
+      "ticker": "BKSY",
+      "score": 64,
+      "rating": "WATCH",
+      "bias": "LONG",
+      "price": 45.17,
+      "vol_ratio": 0.99,
+      "short_pct": 19.5,
+      "bb_width": 43.3,
+      "momentum_5d": 9.8,
+      "stop_loss": 37.88,
+      "stop_pct": 16.1,
+      "ma_bonus": 5,
+      "rs_vs_spy": 6.9,
+      "rs_score": 10,
+      "high_52w_pct": 99.3,
+      "high_52w_score": 10
+    },
+    {
+      "ticker": "ESPR",
+      "score": 64,
+      "rating": "WATCH",
+      "bias": "LONG",
+      "price": 3.13,
+      "vol_ratio": 0.33,
+      "short_pct": 14.4,
+      "bb_width": 86.5,
+      "momentum_5d": 0.3,
+      "stop_loss": 3.11,
+      "stop_pct": 0.6,
+      "ma_bonus": 5,
+      "rs_vs_spy": 54.7,
+      "rs_score": 10,
+      "high_52w_pct": 74.9,
+      "high_52w_score": 0
+    },
+    {
+      "ticker": "HPK",
+      "score": 64,
+      "rating": "WATCH",
+      "bias": "LONG",
+      "price": 8.12,
+      "vol_ratio": 1.49,
+      "short_pct": 58.0,
+      "bb_width": 35.5,
+      "momentum_5d": 21.4,
+      "stop_loss": 7.32,
+      "stop_pct": 9.9,
+      "ma_bonus": 5,
+      "rs_vs_spy": 27.0,
+      "rs_score": 10,
+      "high_52w_pct": 68.4,
+      "high_52w_score": 0
+    },
+    {
+      "ticker": "STAA",
+      "score": 64,
+      "rating": "WATCH",
+      "bias": "LONG",
+      "price": 32.6,
+      "vol_ratio": 0.77,
+      "short_pct": 28.4,
+      "bb_width": 35.4,
+      "momentum_5d": 10.9,
+      "stop_loss": 30.07,
+      "stop_pct": 7.8,
+      "ma_bonus": 5,
+      "rs_vs_spy": 27.2,
+      "rs_score": 10,
+      "high_52w_pct": 90.9,
+      "high_52w_score": 7
+    },
+    {
+      "ticker": "CRMD",
+      "score": 63,
+      "rating": "WATCH",
+      "bias": "LONG",
+      "price": 7.82,
+      "vol_ratio": 1.28,
+      "short_pct": 21.0,
+      "bb_width": 10.9,
+      "momentum_5d": 4.3,
+      "stop_loss": 7.43,
+      "stop_pct": 5.0,
+      "ma_bonus": 10,
+      "rs_vs_spy": 0.2,
+      "rs_score": 4,
+      "high_52w_pct": 44.9,
+      "high_52w_score": 0
+    },
+    {
+      "ticker": "ALKT",
+      "score": 62,
+      "rating": "WATCH",
+      "bias": "LONG",
+      "price": 16.76,
+      "vol_ratio": 0.8,
+      "short_pct": 9.6,
+      "bb_width": 14.0,
+      "momentum_5d": 1.1,
+      "stop_loss": 16.09,
+      "stop_pct": 4.0,
+      "ma_bonus": 10,
+      "rs_vs_spy": -8.4,
+      "rs_score": 0,
+      "high_52w_pct": 53.8,
+      "high_52w_score": 0
     },
     {
       "ticker": "PSNL",
-      "score": 64,
-      "rating": "MEDIUM",
+      "score": 62,
+      "rating": "WATCH",
       "bias": "LONG",
-      "price": 6.39,
-      "vol_ratio": 2.44,
+      "price": 7.04,
+      "vol_ratio": 0.76,
       "short_pct": 19.8,
-      "bb_width": 27.1,
-      "momentum_5d": 6.7,
-      "stop_loss": 5.58,
-      "stop_pct": 12.7,
-      "ma_bonus": 10
-    },
-    {
-      "ticker": "ABAT",
-      "score": 63,
-      "rating": "MEDIUM",
-      "bias": "LONG",
-      "price": 3.55,
-      "vol_ratio": 1.8,
-      "short_pct": 18.2,
-      "bb_width": 16.2,
-      "momentum_5d": 14.9,
-      "stop_loss": 3.16,
-      "stop_pct": 11.1,
-      "ma_bonus": 5
+      "bb_width": 31.1,
+      "momentum_5d": 10.2,
+      "stop_loss": 6.28,
+      "stop_pct": 10.8,
+      "ma_bonus": 5,
+      "rs_vs_spy": 7.4,
+      "rs_score": 10,
+      "high_52w_pct": 61.2,
+      "high_52w_score": 0
     }
   ],
-  "backtest": null
+  "backtest": {
+    "win_rate": 32.5,
+    "wins": 78,
+    "losses": 162,
+    "total": 240,
+    "picks": [
+      {
+        "ticker": "NVRI",
+        "bias": "LONG",
+        "entry_price": 19.67,
+        "current_price": 19.18,
+        "pct_change": -2.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "WEN",
+        "bias": "LONG",
+        "entry_price": 7.9,
+        "current_price": 8.12,
+        "pct_change": 2.8,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GTY",
+        "bias": "SHORT",
+        "entry_price": 32.98,
+        "current_price": 32.66,
+        "pct_change": -1.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "TDAY",
+        "bias": "LONG",
+        "entry_price": 7.32,
+        "current_price": 7.51,
+        "pct_change": 2.6,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PRA",
+        "bias": "LONG",
+        "entry_price": 24.61,
+        "current_price": 24.66,
+        "pct_change": 0.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KURA",
+        "bias": "LONG",
+        "entry_price": 9.68,
+        "current_price": 8.96,
+        "pct_change": -7.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "TBPH",
+        "bias": "SHORT",
+        "entry_price": 16.48,
+        "current_price": 16.25,
+        "pct_change": -1.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "METC",
+        "bias": "LONG",
+        "entry_price": 16.51,
+        "current_price": 13.64,
+        "pct_change": -17.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "BGS",
+        "bias": "SHORT",
+        "entry_price": 5.07,
+        "current_price": 4.04,
+        "pct_change": -20.3,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CGEM",
+        "bias": "LONG",
+        "entry_price": 16.15,
+        "current_price": 14.18,
+        "pct_change": -12.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GO",
+        "bias": "LONG",
+        "entry_price": 7.96,
+        "current_price": 8.12,
+        "pct_change": 2.0,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "LZ",
+        "bias": "SHORT",
+        "entry_price": 6.16,
+        "current_price": 6.37,
+        "pct_change": 3.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NRIX",
+        "bias": "SHORT",
+        "entry_price": 15.96,
+        "current_price": 15.24,
+        "pct_change": -4.5,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SCHL",
+        "bias": "SHORT",
+        "entry_price": 38.97,
+        "current_price": 39.96,
+        "pct_change": 2.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "AQST",
+        "bias": "SHORT",
+        "entry_price": 4.16,
+        "current_price": 4.09,
+        "pct_change": -1.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VTS",
+        "bias": "SHORT",
+        "entry_price": 18.18,
+        "current_price": 18.52,
+        "pct_change": 1.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "DDD",
+        "bias": "LONG",
+        "entry_price": 3.11,
+        "current_price": 2.67,
+        "pct_change": -14.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "JBGS",
+        "bias": "SHORT",
+        "entry_price": 14.91,
+        "current_price": 14.2,
+        "pct_change": -4.8,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NAVI",
+        "bias": "SHORT",
+        "entry_price": 8.32,
+        "current_price": 8.25,
+        "pct_change": -0.8,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "WEST",
+        "bias": "LONG",
+        "entry_price": 8.65,
+        "current_price": 8.07,
+        "pct_change": -6.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GTY",
+        "bias": "SHORT",
+        "entry_price": 32.98,
+        "current_price": 32.66,
+        "pct_change": -1.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "TBPH",
+        "bias": "SHORT",
+        "entry_price": 16.43,
+        "current_price": 16.25,
+        "pct_change": -1.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NVRI",
+        "bias": "LONG",
+        "entry_price": 19.57,
+        "current_price": 19.18,
+        "pct_change": -2.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PRA",
+        "bias": "LONG",
+        "entry_price": 24.62,
+        "current_price": 24.66,
+        "pct_change": 0.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "JBGS",
+        "bias": "SHORT",
+        "entry_price": 14.91,
+        "current_price": 14.2,
+        "pct_change": -4.8,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SCHL",
+        "bias": "SHORT",
+        "entry_price": 38.96,
+        "current_price": 39.96,
+        "pct_change": 2.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VTS",
+        "bias": "SHORT",
+        "entry_price": 17.96,
+        "current_price": 18.52,
+        "pct_change": 3.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "WKC",
+        "bias": "LONG",
+        "entry_price": 27.39,
+        "current_price": 28.57,
+        "pct_change": 4.3,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "BCAX",
+        "bias": "SHORT",
+        "entry_price": 22.16,
+        "current_price": 20.03,
+        "pct_change": -9.6,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NRIX",
+        "bias": "SHORT",
+        "entry_price": 15.88,
+        "current_price": 15.24,
+        "pct_change": -4.0,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PEB",
+        "bias": "SHORT",
+        "entry_price": 14.21,
+        "current_price": 14.28,
+        "pct_change": 0.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PGEN",
+        "bias": "LONG",
+        "entry_price": 4.16,
+        "current_price": 4.16,
+        "pct_change": -0.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SGRY",
+        "bias": "SHORT",
+        "entry_price": 13.94,
+        "current_price": 13.69,
+        "pct_change": -1.8,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABAT",
+        "bias": "LONG",
+        "entry_price": 3.37,
+        "current_price": 2.84,
+        "pct_change": -15.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABUS",
+        "bias": "LONG",
+        "entry_price": 4.4,
+        "current_price": 4.2,
+        "pct_change": -4.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "FLGT",
+        "bias": "LONG",
+        "entry_price": 15.81,
+        "current_price": 15.95,
+        "pct_change": 0.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GIII",
+        "bias": "SHORT",
+        "entry_price": 29.68,
+        "current_price": 28.33,
+        "pct_change": -4.5,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GLUE",
+        "bias": "SHORT",
+        "entry_price": 18.96,
+        "current_price": 17.58,
+        "pct_change": -7.3,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "HRMY",
+        "bias": "SHORT",
+        "entry_price": 29.96,
+        "current_price": 30.44,
+        "pct_change": 1.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VELO",
+        "bias": "LONG",
+        "entry_price": 18.48,
+        "current_price": 16.99,
+        "pct_change": -8.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "TBPH",
+        "bias": "SHORT",
+        "entry_price": 16.49,
+        "current_price": 16.25,
+        "pct_change": -1.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NVRI",
+        "bias": "LONG",
+        "entry_price": 19.67,
+        "current_price": 19.18,
+        "pct_change": -2.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VELO",
+        "bias": "LONG",
+        "entry_price": 19.42,
+        "current_price": 16.99,
+        "pct_change": -12.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PRA",
+        "bias": "LONG",
+        "entry_price": 24.65,
+        "current_price": 24.66,
+        "pct_change": 0.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GTY",
+        "bias": "SHORT",
+        "entry_price": 32.99,
+        "current_price": 32.66,
+        "pct_change": -1.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SCHL",
+        "bias": "SHORT",
+        "entry_price": 38.85,
+        "current_price": 39.96,
+        "pct_change": 2.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VTS",
+        "bias": "SHORT",
+        "entry_price": 18.03,
+        "current_price": 18.52,
+        "pct_change": 2.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GO",
+        "bias": "LONG",
+        "entry_price": 8.14,
+        "current_price": 8.12,
+        "pct_change": -0.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "JBGS",
+        "bias": "SHORT",
+        "entry_price": 14.83,
+        "current_price": 14.2,
+        "pct_change": -4.2,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NRIX",
+        "bias": "SHORT",
+        "entry_price": 15.88,
+        "current_price": 15.24,
+        "pct_change": -4.0,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PEB",
+        "bias": "SHORT",
+        "entry_price": 14.35,
+        "current_price": 14.28,
+        "pct_change": -0.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PGEN",
+        "bias": "LONG",
+        "entry_price": 4.16,
+        "current_price": 4.16,
+        "pct_change": -0.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SGRY",
+        "bias": "SHORT",
+        "entry_price": 13.97,
+        "current_price": 13.69,
+        "pct_change": -2.0,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SLS",
+        "bias": "LONG",
+        "entry_price": 6.06,
+        "current_price": 7.59,
+        "pct_change": 25.2,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABAT",
+        "bias": "LONG",
+        "entry_price": 3.38,
+        "current_price": 2.84,
+        "pct_change": -16.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABUS",
+        "bias": "LONG",
+        "entry_price": 4.41,
+        "current_price": 4.2,
+        "pct_change": -4.8,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABEO",
+        "bias": "SHORT",
+        "entry_price": 5.57,
+        "current_price": 5.12,
+        "pct_change": -8.1,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "FLGT",
+        "bias": "LONG",
+        "entry_price": 15.6,
+        "current_price": 15.95,
+        "pct_change": 2.2,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GIII",
+        "bias": "SHORT",
+        "entry_price": 29.7,
+        "current_price": 28.33,
+        "pct_change": -4.6,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PSNL",
+        "bias": "LONG",
+        "entry_price": 6.67,
+        "current_price": 7.04,
+        "pct_change": 5.5,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VELO",
+        "bias": "LONG",
+        "entry_price": 20.26,
+        "current_price": 16.99,
+        "pct_change": -16.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "TBPH",
+        "bias": "SHORT",
+        "entry_price": 16.38,
+        "current_price": 16.25,
+        "pct_change": -0.8,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NVRI",
+        "bias": "LONG",
+        "entry_price": 19.58,
+        "current_price": 19.18,
+        "pct_change": -2.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PRA",
+        "bias": "LONG",
+        "entry_price": 24.62,
+        "current_price": 24.66,
+        "pct_change": 0.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GTY",
+        "bias": "SHORT",
+        "entry_price": 32.79,
+        "current_price": 32.66,
+        "pct_change": -0.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SGRY",
+        "bias": "SHORT",
+        "entry_price": 14.05,
+        "current_price": 13.69,
+        "pct_change": -2.6,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VTS",
+        "bias": "SHORT",
+        "entry_price": 17.97,
+        "current_price": 18.52,
+        "pct_change": 3.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GO",
+        "bias": "LONG",
+        "entry_price": 8.07,
+        "current_price": 8.12,
+        "pct_change": 0.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SLS",
+        "bias": "LONG",
+        "entry_price": 5.95,
+        "current_price": 7.59,
+        "pct_change": 27.6,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PGEN",
+        "bias": "LONG",
+        "entry_price": 4.17,
+        "current_price": 4.16,
+        "pct_change": -0.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABAT",
+        "bias": "LONG",
+        "entry_price": 3.51,
+        "current_price": 2.84,
+        "pct_change": -19.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "AQST",
+        "bias": "SHORT",
+        "entry_price": 4.18,
+        "current_price": 4.09,
+        "pct_change": -2.2,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "JBGS",
+        "bias": "SHORT",
+        "entry_price": 14.8,
+        "current_price": 14.2,
+        "pct_change": -4.1,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NRIX",
+        "bias": "SHORT",
+        "entry_price": 15.96,
+        "current_price": 15.24,
+        "pct_change": -4.5,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PEB",
+        "bias": "SHORT",
+        "entry_price": 14.34,
+        "current_price": 14.28,
+        "pct_change": -0.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "HYLN",
+        "bias": "LONG",
+        "entry_price": 3.18,
+        "current_price": 4.09,
+        "pct_change": 28.6,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABUS",
+        "bias": "LONG",
+        "entry_price": 4.37,
+        "current_price": 4.2,
+        "pct_change": -3.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CCCC",
+        "bias": "LONG",
+        "entry_price": 3.8,
+        "current_price": 3.11,
+        "pct_change": -18.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PSNL",
+        "bias": "LONG",
+        "entry_price": 6.61,
+        "current_price": 7.04,
+        "pct_change": 6.5,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "FLGT",
+        "bias": "LONG",
+        "entry_price": 15.71,
+        "current_price": 15.95,
+        "pct_change": 1.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VELO",
+        "bias": "LONG",
+        "entry_price": 20.9,
+        "current_price": 16.99,
+        "pct_change": -18.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NVRI",
+        "bias": "LONG",
+        "entry_price": 19.63,
+        "current_price": 19.18,
+        "pct_change": -2.3,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SGRY",
+        "bias": "SHORT",
+        "entry_price": 13.95,
+        "current_price": 13.69,
+        "pct_change": -1.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CCCC",
+        "bias": "LONG",
+        "entry_price": 3.87,
+        "current_price": 3.11,
+        "pct_change": -19.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SLS",
+        "bias": "LONG",
+        "entry_price": 5.98,
+        "current_price": 7.59,
+        "pct_change": 26.9,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "AQST",
+        "bias": "SHORT",
+        "entry_price": 4.14,
+        "current_price": 4.09,
+        "pct_change": -1.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ENVX",
+        "bias": "LONG",
+        "entry_price": 7.14,
+        "current_price": 5.53,
+        "pct_change": -22.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NRIX",
+        "bias": "SHORT",
+        "entry_price": 16.19,
+        "current_price": 15.24,
+        "pct_change": -5.9,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PGEN",
+        "bias": "LONG",
+        "entry_price": 4.18,
+        "current_price": 4.16,
+        "pct_change": -0.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PEB",
+        "bias": "SHORT",
+        "entry_price": 14.28,
+        "current_price": 14.28,
+        "pct_change": -0.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "STAA",
+        "bias": "LONG",
+        "entry_price": 28.7,
+        "current_price": 32.6,
+        "pct_change": 13.6,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "HYLN",
+        "bias": "LONG",
+        "entry_price": 3.15,
+        "current_price": 4.09,
+        "pct_change": 29.8,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABAT",
+        "bias": "LONG",
+        "entry_price": 3.66,
+        "current_price": 2.84,
+        "pct_change": -22.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CRMD",
+        "bias": "SHORT",
+        "entry_price": 7.57,
+        "current_price": 7.82,
+        "pct_change": 3.3,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SG",
+        "bias": "SHORT",
+        "entry_price": 6.76,
+        "current_price": 8.63,
+        "pct_change": 27.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GLUE",
+        "bias": "SHORT",
+        "entry_price": 18.98,
+        "current_price": 17.58,
+        "pct_change": -7.4,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "HRMY",
+        "bias": "SHORT",
+        "entry_price": 30.27,
+        "current_price": 30.44,
+        "pct_change": 0.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KURA",
+        "bias": "SHORT",
+        "entry_price": 9.17,
+        "current_price": 8.96,
+        "pct_change": -2.3,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ALLO",
+        "bias": "LONG",
+        "entry_price": 2.32,
+        "current_price": 1.89,
+        "pct_change": -18.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KALV",
+        "bias": "LONG",
+        "entry_price": 26.83,
+        "current_price": 26.77,
+        "pct_change": -0.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VELO",
+        "bias": "LONG",
+        "entry_price": 20.57,
+        "current_price": 16.99,
+        "pct_change": -17.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NVRI",
+        "bias": "LONG",
+        "entry_price": 19.56,
+        "current_price": 19.18,
+        "pct_change": -1.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CCCC",
+        "bias": "LONG",
+        "entry_price": 3.87,
+        "current_price": 3.11,
+        "pct_change": -19.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SGRY",
+        "bias": "SHORT",
+        "entry_price": 14.01,
+        "current_price": 13.69,
+        "pct_change": -2.3,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SLS",
+        "bias": "LONG",
+        "entry_price": 5.81,
+        "current_price": 7.59,
+        "pct_change": 30.6,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PDYN",
+        "bias": "LONG",
+        "entry_price": 6.78,
+        "current_price": 5.94,
+        "pct_change": -12.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "AQST",
+        "bias": "SHORT",
+        "entry_price": 4.16,
+        "current_price": 4.09,
+        "pct_change": -1.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ENVX",
+        "bias": "LONG",
+        "entry_price": 7.29,
+        "current_price": 5.53,
+        "pct_change": -24.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NRIX",
+        "bias": "SHORT",
+        "entry_price": 16.16,
+        "current_price": 15.24,
+        "pct_change": -5.7,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PEB",
+        "bias": "SHORT",
+        "entry_price": 14.28,
+        "current_price": 14.28,
+        "pct_change": -0.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PGEN",
+        "bias": "LONG",
+        "entry_price": 4.16,
+        "current_price": 4.16,
+        "pct_change": -0.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "STAA",
+        "bias": "LONG",
+        "entry_price": 28.9,
+        "current_price": 32.6,
+        "pct_change": 12.8,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABUS",
+        "bias": "SHORT",
+        "entry_price": 4.35,
+        "current_price": 4.2,
+        "pct_change": -3.4,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "HYLN",
+        "bias": "LONG",
+        "entry_price": 3.15,
+        "current_price": 4.09,
+        "pct_change": 29.8,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CRMD",
+        "bias": "SHORT",
+        "entry_price": 7.57,
+        "current_price": 7.82,
+        "pct_change": 3.3,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SG",
+        "bias": "SHORT",
+        "entry_price": 6.7,
+        "current_price": 8.63,
+        "pct_change": 28.8,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ALLO",
+        "bias": "LONG",
+        "entry_price": 2.28,
+        "current_price": 1.89,
+        "pct_change": -17.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GLUE",
+        "bias": "SHORT",
+        "entry_price": 18.88,
+        "current_price": 17.58,
+        "pct_change": -6.9,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "HRMY",
+        "bias": "SHORT",
+        "entry_price": 30.21,
+        "current_price": 30.44,
+        "pct_change": 0.8,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KURA",
+        "bias": "SHORT",
+        "entry_price": 9.23,
+        "current_price": 8.96,
+        "pct_change": -2.9,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VELO",
+        "bias": "LONG",
+        "entry_price": 20.33,
+        "current_price": 16.99,
+        "pct_change": -16.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NVRI",
+        "bias": "LONG",
+        "entry_price": 19.6,
+        "current_price": 19.18,
+        "pct_change": -2.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SLS",
+        "bias": "LONG",
+        "entry_price": 5.84,
+        "current_price": 7.59,
+        "pct_change": 30.0,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CCCC",
+        "bias": "LONG",
+        "entry_price": 3.88,
+        "current_price": 3.11,
+        "pct_change": -19.8,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SGRY",
+        "bias": "SHORT",
+        "entry_price": 13.96,
+        "current_price": 13.69,
+        "pct_change": -1.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "AQST",
+        "bias": "SHORT",
+        "entry_price": 4.18,
+        "current_price": 4.09,
+        "pct_change": -2.2,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ENVX",
+        "bias": "LONG",
+        "entry_price": 7.2,
+        "current_price": 5.53,
+        "pct_change": -23.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NRIX",
+        "bias": "SHORT",
+        "entry_price": 16.18,
+        "current_price": 15.24,
+        "pct_change": -5.8,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PEB",
+        "bias": "SHORT",
+        "entry_price": 14.31,
+        "current_price": 14.28,
+        "pct_change": -0.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PGEN",
+        "bias": "LONG",
+        "entry_price": 4.16,
+        "current_price": 4.16,
+        "pct_change": -0.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "STAA",
+        "bias": "LONG",
+        "entry_price": 28.89,
+        "current_price": 32.6,
+        "pct_change": 12.8,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABUS",
+        "bias": "SHORT",
+        "entry_price": 4.34,
+        "current_price": 4.2,
+        "pct_change": -3.2,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "HYLN",
+        "bias": "LONG",
+        "entry_price": 3.17,
+        "current_price": 4.09,
+        "pct_change": 29.0,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CRMD",
+        "bias": "SHORT",
+        "entry_price": 7.59,
+        "current_price": 7.82,
+        "pct_change": 3.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PDYN",
+        "bias": "LONG",
+        "entry_price": 6.75,
+        "current_price": 5.94,
+        "pct_change": -12.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SG",
+        "bias": "SHORT",
+        "entry_price": 6.73,
+        "current_price": 8.63,
+        "pct_change": 28.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "HRMY",
+        "bias": "SHORT",
+        "entry_price": 30.27,
+        "current_price": 30.44,
+        "pct_change": 0.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KURA",
+        "bias": "SHORT",
+        "entry_price": 9.22,
+        "current_price": 8.96,
+        "pct_change": -2.8,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PSNL",
+        "bias": "LONG",
+        "entry_price": 6.52,
+        "current_price": 7.04,
+        "pct_change": 8.0,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABAT",
+        "bias": "LONG",
+        "entry_price": 3.52,
+        "current_price": 2.84,
+        "pct_change": -19.3,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NVRI",
+        "bias": "LONG",
+        "entry_price": 19.71,
+        "current_price": 19.18,
+        "pct_change": -2.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VELO",
+        "bias": "LONG",
+        "entry_price": 21.27,
+        "current_price": 16.99,
+        "pct_change": -20.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SGRY",
+        "bias": "SHORT",
+        "entry_price": 13.98,
+        "current_price": 13.69,
+        "pct_change": -2.1,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CCCC",
+        "bias": "LONG",
+        "entry_price": 3.81,
+        "current_price": 3.11,
+        "pct_change": -18.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SLS",
+        "bias": "LONG",
+        "entry_price": 5.8,
+        "current_price": 7.59,
+        "pct_change": 30.9,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "TDAY",
+        "bias": "LONG",
+        "entry_price": 7.36,
+        "current_price": 7.51,
+        "pct_change": 2.0,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ENVX",
+        "bias": "LONG",
+        "entry_price": 7.24,
+        "current_price": 5.53,
+        "pct_change": -23.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PDYN",
+        "bias": "LONG",
+        "entry_price": 6.77,
+        "current_price": 5.94,
+        "pct_change": -12.3,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABEO",
+        "bias": "SHORT",
+        "entry_price": 5.55,
+        "current_price": 5.12,
+        "pct_change": -7.7,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PSNL",
+        "bias": "LONG",
+        "entry_price": 6.75,
+        "current_price": 7.04,
+        "pct_change": 4.3,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GO",
+        "bias": "SHORT",
+        "entry_price": 7.86,
+        "current_price": 8.12,
+        "pct_change": 3.3,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KURA",
+        "bias": "LONG",
+        "entry_price": 9.41,
+        "current_price": 8.96,
+        "pct_change": -4.8,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NRIX",
+        "bias": "LONG",
+        "entry_price": 16.29,
+        "current_price": 15.24,
+        "pct_change": -6.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PEB",
+        "bias": "SHORT",
+        "entry_price": 14.43,
+        "current_price": 14.28,
+        "pct_change": -1.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PGEN",
+        "bias": "LONG",
+        "entry_price": 4.19,
+        "current_price": 4.16,
+        "pct_change": -0.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KULR",
+        "bias": "LONG",
+        "entry_price": 3.73,
+        "current_price": 3.63,
+        "pct_change": -2.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABUS",
+        "bias": "SHORT",
+        "entry_price": 4.33,
+        "current_price": 4.2,
+        "pct_change": -3.0,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "AQST",
+        "bias": "SHORT",
+        "entry_price": 4.2,
+        "current_price": 4.09,
+        "pct_change": -2.6,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CRMD",
+        "bias": "SHORT",
+        "entry_price": 7.58,
+        "current_price": 7.82,
+        "pct_change": 3.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "HYLN",
+        "bias": "LONG",
+        "entry_price": 3.36,
+        "current_price": 4.09,
+        "pct_change": 21.7,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NVRI",
+        "bias": "LONG",
+        "entry_price": 19.8,
+        "current_price": 19.18,
+        "pct_change": -3.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VELO",
+        "bias": "LONG",
+        "entry_price": 21.47,
+        "current_price": 16.99,
+        "pct_change": -20.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SGRY",
+        "bias": "SHORT",
+        "entry_price": 13.97,
+        "current_price": 13.69,
+        "pct_change": -2.0,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "TDAY",
+        "bias": "LONG",
+        "entry_price": 7.39,
+        "current_price": 7.51,
+        "pct_change": 1.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CCCC",
+        "bias": "LONG",
+        "entry_price": 3.66,
+        "current_price": 3.11,
+        "pct_change": -15.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PEB",
+        "bias": "LONG",
+        "entry_price": 14.52,
+        "current_price": 14.28,
+        "pct_change": -1.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SLS",
+        "bias": "LONG",
+        "entry_price": 5.93,
+        "current_price": 7.59,
+        "pct_change": 28.0,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "AQST",
+        "bias": "SHORT",
+        "entry_price": 4.18,
+        "current_price": 4.09,
+        "pct_change": -2.2,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ENVX",
+        "bias": "LONG",
+        "entry_price": 7.09,
+        "current_price": 5.53,
+        "pct_change": -22.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KULR",
+        "bias": "LONG",
+        "entry_price": 3.86,
+        "current_price": 3.63,
+        "pct_change": -6.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KURA",
+        "bias": "LONG",
+        "entry_price": 9.49,
+        "current_price": 8.96,
+        "pct_change": -5.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PGEN",
+        "bias": "LONG",
+        "entry_price": 4.16,
+        "current_price": 4.16,
+        "pct_change": -0.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NRIX",
+        "bias": "LONG",
+        "entry_price": 16.3,
+        "current_price": 15.24,
+        "pct_change": -6.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABUS",
+        "bias": "SHORT",
+        "entry_price": 4.32,
+        "current_price": 4.2,
+        "pct_change": -2.8,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PDYN",
+        "bias": "LONG",
+        "entry_price": 6.73,
+        "current_price": 5.94,
+        "pct_change": -11.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABEO",
+        "bias": "SHORT",
+        "entry_price": 5.6,
+        "current_price": 5.12,
+        "pct_change": -8.6,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CRMD",
+        "bias": "SHORT",
+        "entry_price": 7.59,
+        "current_price": 7.82,
+        "pct_change": 3.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "HYLN",
+        "bias": "LONG",
+        "entry_price": 3.34,
+        "current_price": 4.09,
+        "pct_change": 22.5,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PSNL",
+        "bias": "LONG",
+        "entry_price": 6.5,
+        "current_price": 7.04,
+        "pct_change": 8.3,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABAT",
+        "bias": "LONG",
+        "entry_price": 3.5,
+        "current_price": 2.84,
+        "pct_change": -18.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NVRI",
+        "bias": "LONG",
+        "entry_price": 19.74,
+        "current_price": 19.18,
+        "pct_change": -2.8,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VELO",
+        "bias": "LONG",
+        "entry_price": 21.3,
+        "current_price": 16.99,
+        "pct_change": -20.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SGRY",
+        "bias": "SHORT",
+        "entry_price": 13.97,
+        "current_price": 13.69,
+        "pct_change": -2.0,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "TDAY",
+        "bias": "LONG",
+        "entry_price": 7.39,
+        "current_price": 7.51,
+        "pct_change": 1.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CCCC",
+        "bias": "LONG",
+        "entry_price": 3.66,
+        "current_price": 3.11,
+        "pct_change": -15.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SLS",
+        "bias": "LONG",
+        "entry_price": 6.05,
+        "current_price": 7.59,
+        "pct_change": 25.5,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KULR",
+        "bias": "LONG",
+        "entry_price": 3.84,
+        "current_price": 3.63,
+        "pct_change": -5.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "AQST",
+        "bias": "SHORT",
+        "entry_price": 4.16,
+        "current_price": 4.09,
+        "pct_change": -1.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ENVX",
+        "bias": "LONG",
+        "entry_price": 7.18,
+        "current_price": 5.53,
+        "pct_change": -23.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PDYN",
+        "bias": "LONG",
+        "entry_price": 6.77,
+        "current_price": 5.94,
+        "pct_change": -12.3,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KURA",
+        "bias": "LONG",
+        "entry_price": 9.47,
+        "current_price": 8.96,
+        "pct_change": -5.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PGEN",
+        "bias": "LONG",
+        "entry_price": 4.16,
+        "current_price": 4.16,
+        "pct_change": -0.0,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NRIX",
+        "bias": "LONG",
+        "entry_price": 16.29,
+        "current_price": 15.24,
+        "pct_change": -6.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PEB",
+        "bias": "SHORT",
+        "entry_price": 14.44,
+        "current_price": 14.28,
+        "pct_change": -1.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABUS",
+        "bias": "SHORT",
+        "entry_price": 4.32,
+        "current_price": 4.2,
+        "pct_change": -2.8,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABEO",
+        "bias": "SHORT",
+        "entry_price": 5.59,
+        "current_price": 5.12,
+        "pct_change": -8.4,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "OMER",
+        "bias": "LONG",
+        "entry_price": 14.76,
+        "current_price": 11.97,
+        "pct_change": -18.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABAT",
+        "bias": "LONG",
+        "entry_price": 3.46,
+        "current_price": 2.84,
+        "pct_change": -17.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "HYLN",
+        "bias": "LONG",
+        "entry_price": 3.39,
+        "current_price": 4.09,
+        "pct_change": 20.6,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PSNL",
+        "bias": "LONG",
+        "entry_price": 6.41,
+        "current_price": 7.04,
+        "pct_change": 9.8,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NTST",
+        "bias": "LONG",
+        "entry_price": 20.44,
+        "current_price": 20.48,
+        "pct_change": 0.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NVRI",
+        "bias": "LONG",
+        "entry_price": 19.64,
+        "current_price": 19.18,
+        "pct_change": -2.3,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VELO",
+        "bias": "LONG",
+        "entry_price": 20.82,
+        "current_price": 16.99,
+        "pct_change": -18.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SGRY",
+        "bias": "SHORT",
+        "entry_price": 13.98,
+        "current_price": 13.69,
+        "pct_change": -2.1,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "TDAY",
+        "bias": "LONG",
+        "entry_price": 7.43,
+        "current_price": 7.51,
+        "pct_change": 1.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KULR",
+        "bias": "LONG",
+        "entry_price": 3.9,
+        "current_price": 3.63,
+        "pct_change": -6.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "AQST",
+        "bias": "SHORT",
+        "entry_price": 4.14,
+        "current_price": 4.09,
+        "pct_change": -1.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CCCC",
+        "bias": "LONG",
+        "entry_price": 3.8,
+        "current_price": 3.11,
+        "pct_change": -18.2,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ENVX",
+        "bias": "LONG",
+        "entry_price": 7.21,
+        "current_price": 5.53,
+        "pct_change": -23.3,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SLS",
+        "bias": "LONG",
+        "entry_price": 6.45,
+        "current_price": 7.59,
+        "pct_change": 17.7,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KURA",
+        "bias": "LONG",
+        "entry_price": 9.4,
+        "current_price": 8.96,
+        "pct_change": -4.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NRIX",
+        "bias": "LONG",
+        "entry_price": 16.4,
+        "current_price": 15.24,
+        "pct_change": -7.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PGEN",
+        "bias": "LONG",
+        "entry_price": 4.18,
+        "current_price": 4.16,
+        "pct_change": -0.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "METC",
+        "bias": "LONG",
+        "entry_price": 15.57,
+        "current_price": 13.64,
+        "pct_change": -12.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PEB",
+        "bias": "SHORT",
+        "entry_price": 14.38,
+        "current_price": 14.28,
+        "pct_change": -0.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABEO",
+        "bias": "SHORT",
+        "entry_price": 5.68,
+        "current_price": 5.12,
+        "pct_change": -9.9,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABUS",
+        "bias": "SHORT",
+        "entry_price": 4.3,
+        "current_price": 4.2,
+        "pct_change": -2.3,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CRMD",
+        "bias": "SHORT",
+        "entry_price": 7.53,
+        "current_price": 7.82,
+        "pct_change": 3.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "OMER",
+        "bias": "LONG",
+        "entry_price": 14.76,
+        "current_price": 11.97,
+        "pct_change": -18.9,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABAT",
+        "bias": "LONG",
+        "entry_price": 3.51,
+        "current_price": 2.84,
+        "pct_change": -19.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NVRI",
+        "bias": "LONG",
+        "entry_price": 19.49,
+        "current_price": 19.18,
+        "pct_change": -1.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "VELO",
+        "bias": "LONG",
+        "entry_price": 20.82,
+        "current_price": 16.99,
+        "pct_change": -18.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "AQST",
+        "bias": "SHORT",
+        "entry_price": 4.11,
+        "current_price": 4.09,
+        "pct_change": -0.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SGRY",
+        "bias": "SHORT",
+        "entry_price": 14.19,
+        "current_price": 13.69,
+        "pct_change": -3.5,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "TDAY",
+        "bias": "LONG",
+        "entry_price": 7.49,
+        "current_price": 7.51,
+        "pct_change": 0.3,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KURA",
+        "bias": "LONG",
+        "entry_price": 9.37,
+        "current_price": 8.96,
+        "pct_change": -4.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "KULR",
+        "bias": "LONG",
+        "entry_price": 3.92,
+        "current_price": 3.63,
+        "pct_change": -7.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "CCCC",
+        "bias": "LONG",
+        "entry_price": 3.63,
+        "current_price": 3.11,
+        "pct_change": -14.3,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "SLS",
+        "bias": "LONG",
+        "entry_price": 6.49,
+        "current_price": 7.59,
+        "pct_change": 16.9,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABEO",
+        "bias": "SHORT",
+        "entry_price": 5.72,
+        "current_price": 5.12,
+        "pct_change": -10.5,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ENVX",
+        "bias": "LONG",
+        "entry_price": 7.38,
+        "current_price": 5.53,
+        "pct_change": -25.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "NRIX",
+        "bias": "LONG",
+        "entry_price": 16.4,
+        "current_price": 15.24,
+        "pct_change": -7.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "METC",
+        "bias": "LONG",
+        "entry_price": 15.6,
+        "current_price": 13.64,
+        "pct_change": -12.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PEB",
+        "bias": "SHORT",
+        "entry_price": 14.34,
+        "current_price": 14.28,
+        "pct_change": -0.4,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "PGEN",
+        "bias": "LONG",
+        "entry_price": 4.18,
+        "current_price": 4.16,
+        "pct_change": -0.5,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "AEVA",
+        "bias": "LONG",
+        "entry_price": 20.46,
+        "current_price": 19.0,
+        "pct_change": -7.1,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "OMER",
+        "bias": "LONG",
+        "entry_price": 14.72,
+        "current_price": 11.97,
+        "pct_change": -18.7,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABAT",
+        "bias": "LONG",
+        "entry_price": 3.49,
+        "current_price": 2.84,
+        "pct_change": -18.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "ABUS",
+        "bias": "SHORT",
+        "entry_price": 4.32,
+        "current_price": 4.2,
+        "pct_change": -2.8,
+        "win": true,
+        "scan_date": "2026-05-13"
+      },
+      {
+        "ticker": "GO",
+        "bias": "SHORT",
+        "entry_price": 7.99,
+        "current_price": 8.12,
+        "pct_change": 1.6,
+        "win": false,
+        "scan_date": "2026-05-13"
+      }
+    ]
+  }
 }
