@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-20 06:55:54 ET",
-  "composite_score": 75.2,
+  "updated": "2026-05-20 07:35:08 ET",
+  "composite_score": 74.9,
   "zone": "FULL DEPLOY",
   "sizing_pct": 100,
   "vix_annotation": {
-    "vix": 17.87,
+    "vix": 17.93,
     "emoji": "\ud83d\udfe1",
     "label": "NORMAL",
     "note": "Healthy market volatility. Standard position sizing appropriate."
@@ -20,11 +20,49 @@
     "name": "Volatile Trend Up",
     "updated": "2026-05-19 06:40:06 ET"
   },
-  "markov_regime": null,
+  "markov_regime": {
+    "updated": "2026-05-20 07:06:15 ET",
+    "ticker": "SPY",
+    "years": 2,
+    "window": 20,
+    "row_count": 501,
+    "current_state": "Bull",
+    "current_state_index": 2,
+    "persistence": 86.6,
+    "transitions_from_current": {
+      "Bear": 0.0,
+      "Sideways": 13.4,
+      "Bull": 86.6
+    },
+    "stationary": {
+      "Bear": 15.6,
+      "Sideways": 38.8,
+      "Bull": 45.6
+    },
+    "full_matrix": {
+      "Bear": {
+        "Bear": 84.8,
+        "Sideways": 15.2,
+        "Bull": 0.0
+      },
+      "Sideways": {
+        "Bear": 6.1,
+        "Sideways": 78.2,
+        "Bull": 15.7
+      },
+      "Bull": {
+        "Bear": 0.0,
+        "Sideways": 13.4,
+        "Bull": 86.6
+      }
+    },
+    "conflict": false,
+    "conflict_detail": ""
+  },
   "signals": {
     "vix_level": {
-      "score": 40.9,
-      "value": 17.87,
+      "score": 40.1,
+      "value": 17.93,
       "weight": 25,
       "label": "VIX Level",
       "value_label": "17.9",
@@ -32,10 +70,10 @@
     },
     "vix_ts": {
       "score": 100.0,
-      "value": 0.846,
+      "value": 0.849,
       "weight": 20,
       "label": "VIX Term Structure",
-      "value_label": "0.846",
+      "value_label": "0.849",
       "detail": "VIX/VIX3M ratio. <1.0=contango=calm, >1.0=stress."
     },
     "breadth": {
@@ -55,11 +93,11 @@
       "detail": "TLT/HYG z-score. z<0=tight spreads=bullish."
     },
     "put_call": {
-      "score": 69.4,
-      "value": -5.55,
+      "score": 69.0,
+      "value": -5.23,
       "weight": 10,
       "label": "Put/Call Sentiment",
-      "value_label": "VIX ROC -5.5%",
+      "value_label": "VIX ROC -5.2%",
       "detail": "VIX 20-day rate-of-change. Falling VIX=bullish."
     },
     "crowding": {
@@ -215,7 +253,7 @@
     },
     {
       "date": "2024-07-09",
-      "close": 544.36
+      "close": 544.37
     },
     {
       "date": "2024-07-10",
@@ -879,7 +917,7 @@
     },
     {
       "date": "2025-03-07",
-      "close": 567.68
+      "close": 567.69
     },
     {
       "date": "2025-03-10",
@@ -2095,6 +2133,11 @@
     {
       "date": "2026-05-19",
       "composite_score": 73.7,
+      "zone": "FULL DEPLOY"
+    },
+    {
+      "date": "2026-05-20",
+      "composite_score": 75.2,
       "zone": "FULL DEPLOY"
     }
   ]
