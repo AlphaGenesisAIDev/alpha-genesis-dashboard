@@ -1,82 +1,83 @@
 {
-  "updated": "2026-05-19 06:30:08 ET",
-  "composite_score": 73.7,
+  "updated": "2026-05-20 06:55:54 ET",
+  "composite_score": 75.2,
   "zone": "FULL DEPLOY",
   "sizing_pct": 100,
   "vix_annotation": {
-    "vix": 18.17,
+    "vix": 17.87,
     "emoji": "\ud83d\udfe1",
-    "label": "ELEVATED",
-    "note": "Big up days followed by scary down days then recovery. Widen stops, reduce size slightly."
+    "label": "NORMAL",
+    "note": "Healthy market volatility. Standard position sizing appropriate."
   },
   "regime": {
-    "emoji": "\u26aa",
-    "description": "Market oscillating between support and resistance, no clear direction, whipsaws on breakout attempts.",
-    "what_works": "Mean reversion, very short timeframes, cash",
-    "what_fails": "50/150 crossover, momentum strategies, holding overnight",
-    "action": "REDUCED \u2014 suppress swing scanner signals, low confidence mode",
-    "discord_line": "\u26aa Regime: Choppy Range \u2014 REDUCED, low confidence mode, suppress swing signals",
-    "sizing": "40%",
-    "name": "Choppy Range",
-    "updated": "2026-05-18"
+    "emoji": "\ud83d\udfe1",
+    "description": "Market rising but with sharp pullbacks, VIX 18-25. Big up days followed by scary down days then recovery, hard to hold through noise.",
+    "what_works": "Momo Scanner, Gap Scanner, wider stops",
+    "what_fails": "Tight stops, low conviction positions",
+    "action": "REDUCED \u2014 HIGH setups only, widen stops 1.5x",
+    "discord_line": "\ud83d\udfe1 Regime: Volatile Trend Up \u2014 REDUCED, HIGH setups only, widen stops 1.5x",
+    "sizing": "75%",
+    "name": "Volatile Trend Up",
+    "updated": "2026-05-19 06:40:06 ET"
   },
+  "markov_regime": null,
   "signals": {
     "vix_level": {
-      "score": 36.5,
-      "value": 18.17,
+      "score": 40.9,
+      "value": 17.87,
       "weight": 25,
       "label": "VIX Level",
-      "value_label": "18.2",
+      "value_label": "17.9",
       "detail": "Percentile rank inverted. Bonus if <15, penalty if >30."
     },
     "vix_ts": {
-      "score": 93.8,
-      "value": 0.869,
+      "score": 100.0,
+      "value": 0.846,
       "weight": 20,
       "label": "VIX Term Structure",
-      "value_label": "0.869",
+      "value_label": "0.846",
       "detail": "VIX/VIX3M ratio. <1.0=contango=calm, >1.0=stress."
     },
     "breadth": {
-      "score": 68.6,
-      "value": 64.3,
+      "score": 65.0,
+      "value": 62.5,
       "weight": 20,
       "label": "Market Breadth",
-      "value_label": "64.3% above 200d",
-      "detail": "64.3% of S&P 500 above 200-day SMA."
+      "value_label": "62.5% above 200d",
+      "detail": "62.5% of S&P 500 above 200-day SMA."
     },
     "credit": {
       "score": 100.0,
-      "value": -2.623,
+      "value": -2.797,
       "weight": 15,
       "label": "Credit Spreads",
-      "value_label": "-2.62\u03c3",
+      "value_label": "-2.80\u03c3",
       "detail": "TLT/HYG z-score. z<0=tight spreads=bullish."
     },
     "put_call": {
-      "score": 71.0,
-      "value": -6.82,
+      "score": 69.4,
+      "value": -5.55,
       "weight": 10,
       "label": "Put/Call Sentiment",
-      "value_label": "VIX ROC -6.8%",
+      "value_label": "VIX ROC -5.5%",
       "detail": "VIX 20-day rate-of-change. Falling VIX=bullish."
     },
     "crowding": {
       "score": 100.0,
-      "value": 0.907,
+      "value": 0.903,
       "weight": 10,
       "label": "Factor Crowding",
-      "value_label": "Corr 0.91",
+      "value_label": "Corr 0.90",
       "detail": "MTUM/VLUE 60d correlation. Negative=crowded=risky."
     }
   },
   "backtest": {
-    "total_days": 499,
-    "strategy_return_pct": 22.7,
-    "spy_return_pct": 42.7,
-    "sharpe": 1.21,
+    "total_days": 500,
+    "strategy_return_pct": 21.9,
+    "spy_return_pct": 41.8,
+    "sharpe": 1.17,
     "max_drawdown_pct": -8.8,
-    "hit_rate_pct": 57.5,
+    "hit_rate_pct": 57.4,
     "note": "VIX Level + VIX Term Structure + Credit Spreads (60% weight signals)"
   },
   "spy_2y": [
@@ -506,7 +507,7 @@
     },
     {
       "date": "2024-10-21",
-      "close": 573.35
+      "close": 573.36
     },
     {
       "date": "2024-10-22",
@@ -878,7 +879,7 @@
     },
     {
       "date": "2025-03-07",
-      "close": 567.69
+      "close": 567.68
     },
     {
       "date": "2025-03-10",
@@ -2079,9 +2080,18 @@
     {
       "date": "2026-05-18",
       "close": 738.65
+    },
+    {
+      "date": "2026-05-19",
+      "close": 733.73
     }
   ],
   "history": [
+    {
+      "date": "2026-05-19",
+      "composite_score": 73.7,
+      "zone": "FULL DEPLOY"
+    },
     {
       "date": "2026-05-19",
       "composite_score": 73.7,
